@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import SSColorSlider
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var colorView: UIView!
+    @IBOutlet weak var colorSlider: SSColorSlider!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.colorSlider.addTarget(self, action: #selector(sliderChanged(slider:event:)), for: .valueChanged)
+        self.colorView.backgroundColor = self.colorSlider.color
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,5 +26,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @objc func sliderChanged(slider: SSColorSlider, event: UIEvent) {
+        if let touchEvent = event.allTouches?.first {
+            print(touchEvent.phase, slider.color, slider.value)
+            
+            self.colorView.backgroundColor = slider.color
+        }
+    }
 }
 

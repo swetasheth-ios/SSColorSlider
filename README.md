@@ -1,6 +1,6 @@
 # SSColorSlider
 
-[![CI Status](https://img.shields.io/travis/swetasheth29/SSColorSlider.svg?style=flat)](https://travis-ci.org/swetasheth29/SSColorSlider)
+[![CI Status](https://img.shields.io/travis/swetasheth-ios/SSColorSlider.svg?style=flat)](https://travis-ci.org/swetasheth-ios/SSColorSlider)
 [![Version](https://img.shields.io/cocoapods/v/SSColorSlider.svg?style=flat)](https://cocoapods.org/pods/SSColorSlider)
 [![License](https://img.shields.io/cocoapods/l/SSColorSlider.svg?style=flat)](https://cocoapods.org/pods/SSColorSlider)
 [![Platform](https://img.shields.io/cocoapods/p/SSColorSlider.svg?style=flat)](https://cocoapods.org/pods/SSColorSlider)
@@ -22,7 +22,7 @@ pod 'SSColorSlider'
 
 ## Author
 
-swetasheth29, swetasheth.ios@gmail.com
+Sweta Sheth, swetasheth.ios@gmail.com
 
 ## License
 
